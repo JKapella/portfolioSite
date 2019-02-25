@@ -8,3 +8,18 @@ html {
     background-size: 1920px 1080px;
     background-repeat: no-repeat;
 }
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    /*font-family: 'Raleway', sans-serif;*/
+    color: #FFFFFF;
+}
+
+h1  {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.container {
+
+}
