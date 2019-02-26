@@ -84,7 +84,7 @@ section {
 
     .scrollingFingerImage {
         display: block;
-        margin: 500px auto 300px auto;
+        margin: 400px auto 400px auto;
         width: 175px;
         animation: pulse 2s infinite;
         animation-direction: alternate;
@@ -97,5 +97,25 @@ section {
         100% {
             opacity: 1;
         }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 150px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 330px;
+    }
+
+    .scrollingFingerImage {
+        margin: 300px auto 400px auto;
+        width: 100px;
     }
 }
