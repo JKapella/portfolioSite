@@ -26,7 +26,7 @@ h1  {
 }
 
 h3 {
-    margin-top: 0px;
+    margin: 0 auto 70px auto;
     font-size: 2.5rem;
     font-weight: 200;
 }
@@ -124,7 +124,7 @@ section::before {
     }
 
     .container {
-        width: 330px;
+        width: 380px;
     }
 
     .scrollingFingerImage {
