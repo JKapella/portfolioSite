@@ -18,8 +18,20 @@ body {
 
 h1  {
     border-bottom: 1px solid #FFFFFF;
+    font-size: 2rem;
+}
+
+header  {
+    width: 50%;
+    float: left;
+}
+
+main {
+    width: 50%;
+    float: left;
 }
 
 .container {
-
+    width: 500px;
+    margin: 0 auto;
 }
