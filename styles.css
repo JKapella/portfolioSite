@@ -7,18 +7,28 @@ html {
     background-color: #000000;
     background-size: 1920px 1080px;
     background-repeat: no-repeat;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     font-family: 'Oswald', sans-serif;
-    font-weight: 200;
+    font-size: 16px;
     /*font-family: 'Raleway', sans-serif;*/
     color: #FFFFFF;
 }
 
 h1  {
-    border-bottom: 1px solid #FFFFFF;
-    font-size: 2rem;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+h3 {
+    margin-top: 0px;
 }
 
 header  {
@@ -29,6 +39,10 @@ header  {
 main {
     width: 50%;
     float: left;
+}
+
+section {
+    background-color: darkgrey;
 }
 
 .container {
