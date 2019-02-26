@@ -60,3 +60,18 @@ section {
     width: 600px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1270px) {
+    header {
+        float: none;
+        position: static;
+        width: 100%
+    }
+
+    main {
+        float: none;
+        position: static;
+        width: 100%;
+    }
+
+}
