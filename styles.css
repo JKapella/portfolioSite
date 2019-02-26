@@ -9,10 +9,8 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-
 }
 
 body {
@@ -83,7 +81,7 @@ section::before {
     display: none;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1400px) {
     header {
         position: static;
         width: 100%
