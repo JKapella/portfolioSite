@@ -1,0 +1,134 @@
+* {
+    Box-sizing: Border-box
+}
+
+html {
+    background-image: url('img/backgroundImage.jpg');
+    background-color: #000000;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+}
+
+h1  {
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 15px;
+    margin-top: 220px;
+    margin-bottom: 15px;
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+h3 {
+    margin-top: 0px;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 5px 0 30px 0;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+}
+
+header  {
+    width: 50%;
+    position: fixed;
+}
+
+main {
+    width: 50%;
+    position: relative;
+    left: 50%;
+}
+
+section {
+    border: 2px solid #FFFFFF;
+    padding: 0 10px;
+    position: relative;
+}
+
+section::before {
+    content: ' ';
+    background-color: #d9d9d9;
+    height: 70px;
+    width: 150px;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.container {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.scrollingFingerImage {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        position: static;
+        width: 100%
+    }
+
+    main {
+        position: static;
+        width: 100%;
+    }
+
+    .container {
+        width: 700px;
+    }
+
+    .scrollingFingerImage {
+        display: block;
+        margin: 400px auto 400px auto;
+        width: 175px;
+        animation: pulse 2s infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes pulse {
+        0% {
+            opacity: 0.2;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 150px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 330px;
+    }
+
+    .scrollingFingerImage {
+        margin: 300px auto 400px auto;
+        width: 100px;
+    }
+}
