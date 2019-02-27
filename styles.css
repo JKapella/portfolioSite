@@ -71,6 +71,11 @@ section::before {
     z-index: -1;
 }
 
+article {
+    border: 2px solid #FFFFFF;
+    padding: 0 10px;
+}
+
 .container {
     width: 650px;
     margin: 0 auto;
