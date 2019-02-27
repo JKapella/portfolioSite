@@ -14,21 +14,32 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
     color: #FFFFFF;
+    padding-top: 1px;
 }
 
 h1  {
     border-bottom: 2px solid #FFFFFF;
     padding-bottom: 15px;
-    margin-top: 220px;
-    margin-bottom: 15px;
+    margin: 220px auto 15px auto;
     font-size: 5rem;
     font-weight: 200;
+}
+
+h2  {
+    font-size: 4.2rem;
+    font-weight: 200;
+    margin: 400px auto 20px auto;
+    text-align: center;
 }
 
 h3 {
     margin: 0 auto 70px auto;
     font-size: 2.5rem;
     font-weight: 200;
+}
+
+h2+h3 {
+    text-align: center;
 }
 
 h4 {
@@ -40,6 +51,11 @@ h4 {
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
+}
+
+a, a:visited, a:hover, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 header  {
@@ -71,6 +87,37 @@ section::before {
     z-index: -1;
 }
 
+article {
+    border: 2px solid #FFFFFF;
+    padding: 30px;
+    margin-bottom: 100px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+article:hover {
+    -webkit-box-shadow: 0px 0px 53px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 53px 5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 53px 5px rgba(0,0,0,1);
+    background-color: rgba(217,217,217,0.3);
+    cursor: pointer;
+}
+
+article h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    margin-bottom: 0;
+}
+
 .container {
     width: 650px;
     margin: 0 auto;
@@ -78,6 +125,26 @@ section::before {
 
 .scrollingFingerImage {
     display: none;
+}
+
+.scrollingMouseImage {
+    display: block;
+    margin: 0 auto 300px auto;
+    width: 160px;
+}
+
+.pulsingImage {
+    animation: pulse 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -91,6 +158,15 @@ section::before {
         width: 100%;
     }
 
+    h2  {
+        margin: 50px auto 50px auto;
+        text-align: left;
+    }
+
+    h2+h3 {
+        display: none;
+    }
+
     .container {
         width: 700px;
     }
@@ -99,17 +175,10 @@ section::before {
         display: block;
         margin: 400px auto 400px auto;
         width: 175px;
-        animation: pulse 2s infinite;
-        animation-direction: alternate;
     }
 
-    @keyframes pulse {
-        0% {
-            opacity: 0.2;
-        }
-        100% {
-            opacity: 1;
-        }
+    .scrollingMouseImage {
+        display: none;
     }
 }
 
@@ -119,8 +188,16 @@ section::before {
         margin-top: 150px;
     }
 
+    h2  {
+        font-size: 3rem;
+    }
+
     h3 {
         font-size: 1.8rem;
+    }
+
+    article {
+        margin-bottom: 50px;
     }
 
     .container {
