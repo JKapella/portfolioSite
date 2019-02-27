@@ -53,6 +53,11 @@ p {
     font-size: 1.3rem;
 }
 
+a, a:visited, a:hover, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 header  {
     width: 50%;
     position: fixed;
