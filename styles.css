@@ -125,10 +125,8 @@ ul {
 }
 
 li {
-    list-style: none;
     display: inline-block;
     padding: 5px 5px 5px 5px;
-
 }
 
 a>img {
