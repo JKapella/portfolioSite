@@ -245,3 +245,26 @@ li>a:hover {
         width: 100px;
     }
 }
+
+@media screen and (max-height: 920px) {
+    h1 {
+        margin-top: 120px;
+        font-size: 4rem;
+    }
+
+    h2  {
+        margin-top: 200px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+
+    .scrollingFingerImage {
+        margin: 200px auto 400px auto;
+    }
+}
