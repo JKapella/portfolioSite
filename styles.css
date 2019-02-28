@@ -48,7 +48,7 @@ h4 {
     margin: 5px 0 30px 0;
 }
 
-p {
+p, li {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
 }
@@ -73,6 +73,7 @@ section {
     border: 2px solid #FFFFFF;
     padding: 0 10px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 section::before {
@@ -116,6 +117,41 @@ article img {
 
 article p {
     margin-bottom: 0;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+}
+
+a>img {
+    height: 30px;
+    padding-right: 10px;
+    position: relative;
+    top: 6px;
+}
+
+li>a {
+    padding: 10px;
+    border: 1px solid rgba(255,255,255, 0);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+li>a:hover {
+    background-color: rgba(217,217,217,0.3);
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255, 1);
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,1);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,1);
 }
 
 .container {
