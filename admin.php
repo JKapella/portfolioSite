@@ -1,7 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jameskapella
- * Date: 2019-03-15
- * Time: 16:48
- */
+
+
+?>
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+</head>
+<body>
+
+</body>
+</html>
