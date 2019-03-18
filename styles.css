@@ -76,7 +76,7 @@ main {
     left: 50%;
 }
 
-section {
+section, footer {
     border: 2px solid #FFFFFF;
     padding: 0 10px;
     position: relative;

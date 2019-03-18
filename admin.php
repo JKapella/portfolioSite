@@ -20,12 +20,17 @@ $aboutMeTextareaCopy = "I’m a Full Stack Developer-in-training with The Mayden
         <h1>ADMIN <img src='img/lockicon.png' alt='an icon of a padlock'></h1>
         <section>
             <h4>About me <span><?php echo $aboutMeLastUpdate; ?></span></h4>
-            <form action='' method='post'>
-                <textarea name='' id='' cols='30' rows='10'><?php echo $aboutMeTextareaCopy; ?></textarea>
+            <form action='submitAbout.php' method='post' id='aboutMeForm'>
+                <textarea name='aboutMeText' form='aboutMeForm' cols='30' rows='10'><?php echo $aboutMeTextareaCopy; ?></textarea>
                 <input class='submitButton' type='submit' name='delete' value='Delete'>
                 <input class='submitButton' type='submit' name='publish' value='Publish'>
             </form>
         </section>
+        <footer>
+                <ul>
+                    <li><a href=''>Home</a></li>
+                </ul>
+        </footer>
     </div>
 
 </body>
