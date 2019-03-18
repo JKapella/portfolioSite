@@ -48,6 +48,12 @@ h4 {
     margin: 5px 0 30px 0;
 }
 
+h4>span {
+    float: right;
+    font-size: 1.5rem;
+    padding-top: 12px;
+}
+
 p, li, textarea {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
