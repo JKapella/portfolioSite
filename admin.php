@@ -21,7 +21,7 @@ $aboutMeTextareaCopy = "I’m a Full Stack Developer-in-training with The Mayden
         <section>
             <h4>About me <span><?php echo $aboutMeLastUpdate; ?></span></h4>
             <form action='submitAbout.php' method='post' id='aboutMeForm'>
-                <textarea name='aboutMeText' form='aboutMeForm' cols='30' rows='10'><?php echo $aboutMeTextareaCopy; ?></textarea>
+                <textarea name='aboutMeText' form='aboutMeForm'><?php echo $aboutMeTextareaCopy; ?></textarea>
                 <input type='hidden' name='editingPost' value=<?php echo $editingPost; ?>>
                 <input class='submitButton' type='submit' name='delete' value='Delete'>
                 <input class='submitButton' type='submit' name='publish' value='Publish'>
@@ -33,6 +33,5 @@ $aboutMeTextareaCopy = "I’m a Full Stack Developer-in-training with The Mayden
                 </ul>
         </footer>
     </div>
-
 </body>
 </html>
