@@ -13,6 +13,10 @@
     <link rel='stylesheet' href='styles.css' type='text/css'>
 </head>
 <body>
-    <h1>ADMIN</h1>
+    <div class='container'>
+        <h1>ADMIN <img src='img/lockicon.png' alt='an icon of a padlock'></h1>
+
+    </div>
+
 </body>
 </html>

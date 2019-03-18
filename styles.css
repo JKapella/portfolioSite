@@ -129,6 +129,12 @@ li {
     padding: 5px 5px 5px 5px;
 }
 
+h1>img {
+    height: 65px;
+    float: right;
+    padding-top: 8px;
+}
+
 a>img {
     height: 30px;
     padding-right: 10px;
