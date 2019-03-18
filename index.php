@@ -1,3 +1,11 @@
+<?php
+
+$getAboutMeText = returnAboutMeTextFromDB();
+$aboutMeText = 'Test';
+//I’m a Full Stack Developer-in-training with The Mayden Academy who’s enthusiastic about both front-end design and back-end systems. I’m also a Certified Scrum Master with training in Agile methodologies. I’m fascinated by games and games design, and have been jamming and creating in my spare time for several years. Away from keyboards and screens I can also be found making loud noises with electric guitars, and stroking all the good dogs.
+
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -18,7 +26,7 @@
             <img class='scrollingFingerImage pulsingImage' src='img/scrollFingerIcon.png' alt='Scroll-down icon'>
             <section>
                 <h4>About me</h4>
-                <p>I’m a Full Stack Developer-in-training with The Mayden Academy who’s enthusiastic about both front-end design and back-end systems. I’m also a Certified Scrum Master with training in Agile methodologies. I’m fascinated by games and games design, and have been jamming and creating in my spare time for several years. Away from keyboards and screens I can also be found making loud noises with electric guitars, and stroking all the good dogs. </p>
+                <p><?php echo $aboutMeText; ?></p>
             </section>
             <section>
                 <h4>Contact</h4>
