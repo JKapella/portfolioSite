@@ -17,3 +17,15 @@ function returnAboutMeTextFromDb(PDO $db) : string {
         return '';
     }
 }
+
+function retrieveAboutMeInfoFromDb(PDO $db) :array {
+    $query = $db->prepare("SELECT `content`, `post_time`, `is_deleted` FROM `about_me_data` WHERE `is_deleted` != 1 ORDER BY `post_time` DESC LIMIT 1;");
+    $query->setFetchMode(PDO::FETCH_ASSOC);
+    $query->execute();
+    $output = $query->fetchAll();
+    if ($output != null) {
+        return $output;
+    } else {
+        return [];
+    }
+}
