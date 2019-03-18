@@ -30,10 +30,18 @@ function retrieveAboutMeInfoFromDb(PDO $db) :array {
     }
 }
 
-function checkIfEditingPost($infoArray) {
+function checkIfEditingPost(array $infoArray) : bool {
     if ($infoArray[0]['content'] === null ) {
         return 0;
     } else {
         return 1;
+    }
+}
+
+function formatLastUpdatedInfo(array $infoArray) : string {
+    if ($infoArray[0]['post_time'] === null ) {
+        return 'Please write a new post!';
+    } else {
+        return 'Last updated - ' . $infoArray[0]['post_time'];
     }
 }
