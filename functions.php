@@ -1,5 +1,5 @@
 <?php
 
-function returnAboutMeTextFromDB() {
-    
+function returnAboutMeTextFromDb() {
+
 }
