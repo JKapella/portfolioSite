@@ -22,8 +22,8 @@ $aboutMeTextareaCopy = "I’m a Full Stack Developer-in-training with The Mayden
             <h4>About me <span><?php echo $aboutMeLastUpdate; ?></span></h4>
             <form action='' method='post'>
                 <textarea name='' id='' cols='30' rows='10'><?php echo $aboutMeTextareaCopy; ?></textarea>
-                <input type='submit'>
-                <input type='submit'>
+                <input class='submitButton' type='submit' name='delete' value='Delete'>
+                <input class='submitButton' type='submit' name='publish' value='Publish'>
             </form>
         </section>
     </div>
