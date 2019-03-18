@@ -46,14 +46,21 @@ h4 {
     font-size: 2rem;
     font-weight: 200;
     margin: 5px 0 30px 0;
+    text-align: left;
 }
 
-p, li {
+h4>span {
+    float: right;
+    font-size: 1.5rem;
+    padding-top: 12px;
+}
+
+p, li, textarea, .submitButton {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
 }
 
-a, a:visited, a:hover, a:active {
+a, a:visited, a:hover, a:active, .submitButton {
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -74,6 +81,15 @@ section {
     padding: 0 10px;
     position: relative;
     margin-bottom: 40px;
+}
+
+footer {
+    border-top: 2px solid #FFFFFF;
+}
+
+h1+section {
+    margin-top: 50px;
+    text-align: right;
 }
 
 section::before {
@@ -129,6 +145,12 @@ li {
     padding: 5px 5px 5px 5px;
 }
 
+h1>img {
+    height: 84px;
+    float: right;
+    padding-top: 8px;
+}
+
 a>img {
     height: 30px;
     padding-right: 10px;
@@ -136,7 +158,7 @@ a>img {
     top: 6px;
 }
 
-li>a {
+li>a, .submitButton {
     padding: 10px;
     border: 1px solid rgba(255,255,255, 0);
     -o-transition:.5s;
@@ -145,13 +167,38 @@ li>a {
     -webkit-transition:.5s;
 }
 
-li>a:hover {
+li>a:hover, .submitButton:hover {
     background-color: rgba(217,217,217,0.3);
     cursor: pointer;
     border: 1px solid rgba(255,255,255, 1);
     -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,1);
     box-shadow: 0px 0px 20px 2px rgba(0,0,0,1);
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.lockLink {
+    height: 35px;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+.lockLink:hover {
+    opacity: 1;
 }
 
 .container {
@@ -172,6 +219,11 @@ li>a:hover {
 .pulsingImage {
     animation: pulse 2s infinite;
     animation-direction: alternate;
+}
+
+.submitButton {
+    background-color: rgba(217,217,217,0);
+    margin: 10px 0 10px 10px;
 }
 
 @keyframes pulse {
@@ -262,6 +314,10 @@ li>a:hover {
 
     p, li {
         font-size: 1rem;
+    }
+
+    h1>img {
+        height: 68px;
     }
 
     .scrollingFingerImage {

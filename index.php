@@ -8,6 +8,9 @@
     <link rel='stylesheet' href='styles.css' type='text/css'>
 </head>
 <body>
+    <div class='lockLink'>
+        <a href='admin.php'><img src='img/lockicon.png' alt='an icon of a padlock'></a>
+    </div>
     <header>
         <div class='container'>
             <h1>JAMES KAPELLA</h1>
