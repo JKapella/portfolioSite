@@ -76,6 +76,10 @@ section {
     margin-bottom: 40px;
 }
 
+h1+section {
+    margin-top: 50px;
+}
+
 section::before {
     content: ' ';
     background-color: #d9d9d9;
@@ -130,7 +134,7 @@ li {
 }
 
 h1>img {
-    height: 65px;
+    height: 84px;
     float: right;
     padding-top: 8px;
 }
@@ -268,6 +272,10 @@ li>a:hover {
 
     p, li {
         font-size: 1rem;
+    }
+
+    h1>img {
+        height: 68px;
     }
 
     .scrollingFingerImage {
