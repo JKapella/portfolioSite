@@ -10,10 +10,6 @@ $editingPost = checkIfEditingPost($retrievedAboutMeInfoFromDb);
 $aboutMeLastUpdate = formatLastUpdatedInfo($retrievedAboutMeInfoFromDb);
 $aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb[0]['content'];
 
-
-var_dump($retrievedAboutMeInfoFromDb);
-var_dump($editingPost);
-
 ?>
 
 <!DOCTYPE html>

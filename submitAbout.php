@@ -1,10 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jameskapella
- * Date: 2019-03-18
- * Time: 10:55
- */
+
+include 'functions.php';
+include 'dbConnect.php';
+
+$db = getDbConnection();
 
 
-var_dump($_POST);
+processAboutMeSubmittedForm($_POST, $db);
+
+header('location: admin.php');

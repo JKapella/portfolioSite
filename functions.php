@@ -45,3 +45,19 @@ function formatLastUpdatedInfo(array $infoArray) : string {
         return 'Last updated - ' . $infoArray[0]['post_time'];
     }
 }
+
+function processAboutMeSubmittedForm(array $formData, PDO $db) {
+    if ($formData['aboutMeText'] != null) {
+        if ($formData['editingPost'] == false) {
+            $query = $db->prepare("INSERT INTO `about_me_data` (`content`, `post_time`, `is_deleted`)
+VALUES (:content, :timestamp, '0');");
+            $query->bindParam(':content', $formData['aboutMeText']);
+            $query->bindParam(':timestamp', date('Y-m-d H:i:s'));
+            return $query->execute();
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
