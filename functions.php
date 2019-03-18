@@ -18,34 +18,54 @@ function returnAboutMeTextFromDb(PDO $db) : string {
     }
 }
 
+/**
+ * This function returns content, post time and deleted flag from the MOST RECENT, NOT FLAGGED AS DELETED entry in the about me database, as an array
+ *
+ * @param PDO $db This must be a valid PDO object connecting to a database with an 'about_me_data' table
+ *
+ * @return array
+ */
 function retrieveAboutMeInfoFromDb(PDO $db) :array {
     $query = $db->prepare("SELECT `content`, `post_time`, `is_deleted` FROM `about_me_data` WHERE `is_deleted` != 1 ORDER BY `post_time` DESC LIMIT 1;");
     $query->setFetchMode(PDO::FETCH_ASSOC);
     $query->execute();
     $output = $query->fetchAll();
     if ($output != null) {
-        return $output;
+        return $output[0];
     } else {
         return [];
     }
 }
 
+/**
+ * @param array $infoArray
+ * @return bool
+ */
 function checkIfEditingPost(array $infoArray) : bool {
-    if ($infoArray[0]['content'] === null ) {
+    if ($infoArray['content'] === null ) {
         return 0;
     } else {
         return 1;
     }
 }
 
+/**
+ * @param array $infoArray
+ * @return string
+ */
 function formatLastUpdatedInfo(array $infoArray) : string {
-    if ($infoArray[0]['post_time'] === null ) {
+    if ($infoArray['post_time'] === null ) {
         return 'Please write a new post!';
     } else {
-        return 'Last updated - ' . $infoArray[0]['post_time'];
+        return 'Last updated - ' . $infoArray['post_time'];
     }
 }
 
+/**
+ * @param array $formData
+ * @param PDO $db
+ * @return bool
+ */
 function processAboutMeSubmittedForm(array $formData, PDO $db) {
     if ($formData['aboutMeText'] != null) {
         if ($formData['editingPost'] == false) {

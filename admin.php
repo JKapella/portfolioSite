@@ -8,7 +8,7 @@ $db = getDbConnection();
 $retrievedAboutMeInfoFromDb = retrieveAboutMeInfoFromDb($db);
 $editingPost = checkIfEditingPost($retrievedAboutMeInfoFromDb);
 $aboutMeLastUpdate = formatLastUpdatedInfo($retrievedAboutMeInfoFromDb);
-$aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb[0]['content'];
+$aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb['content'];
 
 ?>
 
