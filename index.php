@@ -3,8 +3,8 @@
 include 'functions.php';
 include 'dbConnect.php';
 
-$getAboutMeText = returnAboutMeTextFromDb();
-$aboutMeText = 'Test';
+$db = getDbConnection();
+$aboutMeText = returnAboutMeTextFromDb($db);
 
 ?>
 
