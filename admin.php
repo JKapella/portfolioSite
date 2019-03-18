@@ -29,7 +29,7 @@ $aboutMeTextareaCopy = "I’m a Full Stack Developer-in-training with The Mayden
         </section>
         <footer>
                 <ul>
-                    <li><a href=''>Home</a></li>
+                    <li><a href='index.php'>Home</a></li>
                 </ul>
         </footer>
     </div>
