@@ -11,7 +11,7 @@ function returnAboutMeTextFromDb(PDO $db) : string {
     $query = $db->prepare("SELECT `content` FROM `about_me_data` WHERE `is_deleted` != 1 ORDER BY `post_time` DESC LIMIT 1;");
     $query->execute();
     $output = $query->fetchAll();
-    if ($output == null) {
+    if ($output != null) {
         return $output[0]['content'];
     } else {
         return '';
