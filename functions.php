@@ -29,3 +29,11 @@ function retrieveAboutMeInfoFromDb(PDO $db) :array {
         return [];
     }
 }
+
+function checkIfEditingPost($infoArray) {
+    if ($infoArray[0]['content'] === null ) {
+        return 0;
+    } else {
+        return 1;
+    }
+}

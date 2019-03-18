@@ -12,6 +12,8 @@ $aboutMeTextareaCopy = "I’m a Full Stack Developer-in-training with The Mayden
 
 
 var_dump($retrievedAboutMeInfoFromDb);
+
+
 ?>
 
 <!DOCTYPE html>
