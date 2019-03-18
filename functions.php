@@ -23,7 +23,7 @@ function returnAboutMeTextFromDb(PDO $db) : string {
  *
  * @param PDO $db This must be a valid PDO object connecting to a database with an 'about_me_data' table
  *
- * @return array
+ * @return array Returns either an empty array if there are no current valid posts, or the post time, deleted flag and content in an associative array
  */
 function retrieveAboutMeInfoFromDb(PDO $db) :array {
     $query = $db->prepare("SELECT `content`, `post_time`, `is_deleted` FROM `about_me_data` WHERE `is_deleted` != 1 ORDER BY `post_time` DESC LIMIT 1;");
@@ -38,8 +38,11 @@ function retrieveAboutMeInfoFromDb(PDO $db) :array {
 }
 
 /**
- * @param array $infoArray
- * @return bool
+ * Takes in an info array based on current about me post taken from the database, if there is no valid last post, it flags that we need to create an entirely new post, represented by a boolean
+ *
+ * @param array $infoArray This should be an array of info taken from the db based on the current post (or an empty array if there is no valid last post)
+ *
+ * @return bool Will return true if there is a valid previous post (i.e. we ARE editing) or false if we are creating a new post (i.e we ARE NOT editing)
  */
 function checkIfEditingPost(array $infoArray) : bool {
     if ($infoArray['content'] === null ) {
@@ -50,8 +53,11 @@ function checkIfEditingPost(array $infoArray) : bool {
 }
 
 /**
- * @param array $infoArray
- * @return string
+ * Takes in an info array based on current about me post taken from the database, then gives back either post time or a default message
+ *
+ * @param array $infoArray This should be an array of info taken from the db based on the current post (or an empty array if there is no valid last post)
+ *
+ * @return string will return either formatted date/time with 'last updated' prefix, or a default message to write a new post
  */
 function formatLastUpdatedInfo(array $infoArray) : string {
     if ($infoArray['post_time'] === null ) {
@@ -62,9 +68,12 @@ function formatLastUpdatedInfo(array $infoArray) : string {
 }
 
 /**
- * @param array $formData
- * @param PDO $db
- * @return bool
+ * This function accepts data from the about me submission form and rejects the input if null or edits/adds to database if it is valid
+ *
+ * @param array $formData This should be an array of info taken from about me form on the admin page
+ * @param PDO $db This must be a valid PDO object connecting to a database with an 'about_me_data' table
+ *
+ * @return bool Will return true if data has been added to the DB, or false if it failed.
  */
 function processAboutMeSubmittedForm(array $formData, PDO $db) {
     if ($formData['aboutMeText'] != null) {
