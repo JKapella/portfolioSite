@@ -55,12 +55,12 @@ h4>span {
     padding-top: 12px;
 }
 
-p, li, textarea, .submitButton {
+p, li, textarea, .submit-button {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
 }
 
-a, a:visited, a:hover, a:active, .submitButton {
+a, a:visited, a:hover, a:active, .submit-button {
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -158,7 +158,7 @@ a>img {
     top: 6px;
 }
 
-li>a, .submitButton {
+li>a, .submit-button {
     padding: 10px;
     border: 1px solid rgba(255,255,255, 0);
     -o-transition:.5s;
@@ -167,7 +167,7 @@ li>a, .submitButton {
     -webkit-transition:.5s;
 }
 
-li>a:hover, .submitButton:hover {
+li>a:hover, .submit-button:hover {
     background-color: rgba(217,217,217,0.3);
     cursor: pointer;
     border: 1px solid rgba(255,255,255, 1);
@@ -185,7 +185,7 @@ textarea {
     color: #FFFFFF;
 }
 
-.lockLink {
+.lock-link {
     height: 35px;
     opacity: 0;
     position: fixed;
@@ -197,7 +197,7 @@ textarea {
     -webkit-transition:.5s;
 }
 
-.lockLink:hover {
+.lock-link:hover {
     opacity: 1;
 }
 
@@ -221,7 +221,7 @@ textarea {
     animation-direction: alternate;
 }
 
-.submitButton {
+.submit-button {
     background-color: rgba(217,217,217,0);
     margin: 10px 0 10px 10px;
 }

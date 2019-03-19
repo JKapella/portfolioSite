@@ -18,7 +18,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
     <link rel='stylesheet' href='styles.css' type='text/css'>
 </head>
 <body>
-    <div class='lockLink'>
+    <div class='lock-link'>
         <a href='admin.php'><img src='img/lockicon.png' alt='an icon of a padlock'></a>
     </div>
     <header>
