@@ -10,7 +10,7 @@ $db = getDbConnection();
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <title>James Kapella || Web Developer</title>
+    <title>Login page</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
     <link rel='stylesheet' href='normalize.css' type='text/css'>
