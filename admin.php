@@ -29,7 +29,7 @@ $aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb['content'];
             <form action='submitAbout.php' method='post' id='aboutMeForm'>
                 <textarea name='aboutMeText' form='aboutMeForm'><?php echo $aboutMeTextareaCopy; ?></textarea>
                 <input type='hidden' name='editingPost' value=<?php echo $editingPost; ?>>
-                <input class='submitButton' type='submit' name='delete' value='Delete'>
+                <input class='submitButton' type='submit' name='delete' value='Delete' formaction='deleteAbout.php'>
                 <input class='submitButton' type='submit' name='publish' value='Publish'>
             </form>
         </section>
