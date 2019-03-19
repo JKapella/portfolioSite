@@ -25,7 +25,7 @@ function returnAboutMeTextFromDb(PDO $db) : string {
  *
  * @return array Returns either an empty array if there are no current valid posts, or the post time, deleted flag and content in an associative array
  */
-function retrieveAboutMeInfoFromDb(PDO $db) :array {
+function retrieveAboutMeInfoFromDb(PDO $db) : array {
     $query = $db->prepare("SELECT `content`, `post_time`, `is_deleted` FROM `about_me_data` WHERE `is_deleted` != 1 ORDER BY `post_time` DESC LIMIT 1;");
     $query->setFetchMode(PDO::FETCH_ASSOC);
     $query->execute();
@@ -75,7 +75,7 @@ function formatLastUpdatedInfo(array $infoArray) : string {
  *
  * @return bool Will return true if data has been added to the DB, or false if it failed.
  */
-function processAboutMeSubmittedForm(array $formData, PDO $db) {
+function processAboutMeSubmittedForm(array $formData, PDO $db) : bool {
     if (isset($formData['aboutMeText'])) {
         if ($formData['editingPost'] == false) {
             $query = $db->prepare("INSERT INTO `about_me_data` (`content`, `post_time`, `is_deleted`)
@@ -93,4 +93,16 @@ VALUES (:content, :timestamp, '0');");
     } else {
         return false;
     }
+}
+
+/**
+ * This function sets the 'is_deleted' flag for all about me entries in the database that are not deleted (there should only ever be one, it just does all as a safety measure)
+ *
+ * @param $db PDO This must be a valid PDO object connecting to a database with an 'about_me_data' table
+ *
+ * @return bool Returns true if database update is successful, false on failure
+ */
+function processAboutMeDeleteForm(PDO $db) : bool {
+    $query = $db->prepare("UPDATE `about_me_data` SET `is_deleted` = '1' WHERE `is_deleted` != 1;");
+    return $query->execute();
 }
