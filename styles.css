@@ -87,7 +87,7 @@ footer {
     border-top: 2px solid #FFFFFF;
 }
 
-h1+section {
+h1+section, h1+.login-area {
     margin-top: 50px;
     text-align: right;
 }
@@ -142,6 +142,7 @@ ul {
 
 li {
     display: inline-block;
+    padding: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
 }
 
@@ -232,6 +233,13 @@ textarea {
     padding: 10px;
     background-color: #000000;
     color: #FFFFFF;
+}
+
+.login-area {
+    border: 2px solid #FFFFFF;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 40px;
 }
 
 @keyframes pulse {

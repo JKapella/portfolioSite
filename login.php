@@ -19,19 +19,19 @@ $db = getDbConnection();
 <body>
 <div class='container'>
     <h1>LOGIN <img src='img/lockicon.png' alt='an icon of a padlock'></h1>
-    <section>
+    <div class='login-area'>
         <form action=''>
             <p>
-                <input class='login-input' type='text''>
+                <input class='login-input' type='text' placeholder='Enter your username...'>
             </p>
             <p>
-                <input class='login-input' type='text''>
+                <input class='login-input' type='text' placeholder='Enter your password...'>
             </p>
             <p>
                 <input class='submit-button' type='submit'>
             </p>
         </form>
-    </section>
+    </div>
     <footer>
         <ul>
             <li><a href='index.php'>Home</a></li>
