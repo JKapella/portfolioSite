@@ -45,10 +45,10 @@ function retrieveAboutMeInfoFromDb(PDO $db) :array {
  * @return bool Will return true if there is a valid previous post (i.e. we ARE editing) or false if we are creating a new post (i.e we ARE NOT editing)
  */
 function checkIfEditingPost(array $infoArray) : bool {
-    if ($infoArray['content'] === null ) {
-        return 0;
-    } else {
+    if (isset($infoArray['content']) && strlen($infoArray['content']) < 3000) {
         return 1;
+    } else {
+        return 0;
     }
 }
 
@@ -60,10 +60,10 @@ function checkIfEditingPost(array $infoArray) : bool {
  * @return string will return either formatted date/time with 'last updated' prefix, or a default message to write a new post
  */
 function formatLastUpdatedInfo(array $infoArray) : string {
-    if ($infoArray['post_time'] === null ) {
-        return 'Please write a new post!';
-    } else {
+    if (isset($infoArray['post_time'])) {
         return 'Last updated - ' . $infoArray['post_time'];
+    } else {
+        return 'Please write a new post!';
     }
 }
 
