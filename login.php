@@ -21,15 +21,9 @@ $db = getDbConnection();
     <h1>LOGIN <img src='img/lockicon.png' alt='an icon of a padlock'></h1>
     <div class='login-area'>
         <form action='loginHandler.php' method='post'>
-            <p>
-                <input class='login-input' type='text' name='username' placeholder='Enter your username...'>
-            </p>
-            <p>
-                <input class='login-input' type='text' name='password' placeholder='Enter your password...'>
-            </p>
-            <p>
-                <input class='submit-button' type='submit'>
-            </p>
+            <p><input class='login-input' type='text' name='username' placeholder='Enter your username...'></p>
+            <p><input class='login-input' type='text' name='password' placeholder='Enter your password...'></p>
+            <p><input class='submit-button' type='submit'></p>
         </form>
     </div>
     <footer>
