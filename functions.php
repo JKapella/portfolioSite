@@ -76,7 +76,7 @@ function formatLastUpdatedInfo(array $infoArray) : string {
  * @return bool Will return true if data has been added to the DB, or false if it failed.
  */
 function processAboutMeSubmittedForm(array $formData, PDO $db) {
-    if ($formData['aboutMeText'] != null) {
+    if (isset($formData['aboutMeText'])) {
         if ($formData['editingPost'] == false) {
             $query = $db->prepare("INSERT INTO `about_me_data` (`content`, `post_time`, `is_deleted`)
 VALUES (:content, :timestamp, '0');");
@@ -84,7 +84,11 @@ VALUES (:content, :timestamp, '0');");
             $query->bindParam(':timestamp', date('Y-m-d H:i:s'));
             return $query->execute();
         } else {
-            return false;
+            $query = $db->prepare("UPDATE `about_me_data` SET `content` = :content, 
+                           `post_time` = :timestamp WHERE `is_deleted` != 1 ORDER BY `post_time` DESC LIMIT 1;");
+            $query->bindParam(':content', $formData['aboutMeText']);
+            $query->bindParam(':timestamp', date('Y-m-d H:i:s'));
+            return $query->execute();
         }
     } else {
         return false;
