@@ -17,5 +17,25 @@ $db = getDbConnection();
     <link rel='stylesheet' href='styles.css' type='text/css'>
 </head>
 <body>
-
+<div class='container'>
+    <h1>LOGIN <img src='img/lockicon.png' alt='an icon of a padlock'></h1>
+    <section>
+        <form action=''>
+            <p>
+                <input class='login-input' type='text''>
+            </p>
+            <p>
+                <input class='login-input' type='text''>
+            </p>
+            <p>
+                <input class='submit-button' type='submit'>
+            </p>
+        </form>
+    </section>
+    <footer>
+        <ul>
+            <li><a href='index.php'>Home</a></li>
+        </ul>
+    </footer>
+</div>
 </body>

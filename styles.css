@@ -226,6 +226,14 @@ textarea {
     margin: 10px 0 10px 10px;
 }
 
+.login-input {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
 @keyframes pulse {
     0% {
         opacity: 0.2;
