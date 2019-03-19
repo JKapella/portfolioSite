@@ -98,7 +98,7 @@ VALUES (:content, :timestamp, '0');");
 /**
  * This function sets the 'is_deleted' flag for all about me entries in the database that are not deleted (there should only ever be one, it just does all as a safety measure)
  *
- * @param $db PDO $db This must be a valid PDO object connecting to a database with an 'about_me_data' table
+ * @param $db PDO This must be a valid PDO object connecting to a database with an 'about_me_data' table
  *
  * @return bool Returns true if database update is successful, false on failure
  */
