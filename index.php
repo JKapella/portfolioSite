@@ -3,6 +3,8 @@
 include 'functions.php';
 include 'dbConnect.php';
 
+session_start();
+
 $db = getDbConnection();
 $aboutMeText = returnAboutMeTextFromDb($db);
 
