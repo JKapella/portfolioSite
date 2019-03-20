@@ -3,6 +3,13 @@
 include 'functions.php';
 include 'dbConnect.php';
 
+session_start();
+
+
+if ($_SESSION['loggedIn'] == true) {
+    header('location: admin.php');
+}
+
 $db = getDbConnection();
 
 ?>
