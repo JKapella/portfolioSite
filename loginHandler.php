@@ -9,16 +9,13 @@ session_start();
 $db = getDbConnection();
 
 $heldPasswordForUser = getHeldPasswordForUser($_POST['username'], $db);
-var_dump($verifyPassword = password_verify($_POST['password'], $heldPasswordForUser));
+$verifyPassword = password_verify($_POST['password'], $heldPasswordForUser);
+if ($verifyPassword == true) {
+    $_SESSION['loggedIn'] = true;
+}
 
-
-
-
-
-//
-////check the two passwords match
-////set logged in to true..
-//
-//if ($_SESSION['loggedIn'] == true) {
-//    header('location: admin.php');
-//}
+if ($_SESSION['loggedIn'] == true) {
+    header('location: admin.php');
+} else {
+    header('location: login.php');
+}
