@@ -11,6 +11,9 @@ if (!isset($_SESSION['loggedIn'])) {
 
 $db = getDbConnection();
 
-processAboutMeSubmittedForm($_POST, $db);
+if (isset($_POST)) {
+    $aboutMeData = $_POST;
+    processAboutMeSubmittedForm($aboutMeData, $db);
+}
 
 header('location: admin.php');

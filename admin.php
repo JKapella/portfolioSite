@@ -10,7 +10,6 @@ if (!isset($_SESSION['loggedIn'])) {
 }
 
 $db = getDbConnection();
-
 $retrievedAboutMeInfoFromDb = retrieveAboutMeInfoFromDb($db);
 $editingPost = checkIfEditingPost($retrievedAboutMeInfoFromDb);
 $aboutMeLastUpdate = formatLastUpdatedInfo($retrievedAboutMeInfoFromDb);
