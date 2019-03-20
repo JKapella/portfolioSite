@@ -13,7 +13,11 @@ $db = getDbConnection();
 $retrievedAboutMeInfoFromDb = retrieveAboutMeInfoFromDb($db);
 $editingPost = checkIfEditingPost($retrievedAboutMeInfoFromDb);
 $aboutMeLastUpdate = formatLastUpdatedInfo($retrievedAboutMeInfoFromDb);
-$aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb['content'];
+if (isset($retrievedAboutMeInfoFromDb['content'])) {
+    $aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb['content'];
+} else {
+    $aboutMeTextareaCopy = '';
+}
 
 ?>
 
