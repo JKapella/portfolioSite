@@ -8,13 +8,13 @@ session_start();
 
 $db = getDbConnection();
 
-var_dump($_POST);
+$heldPasswordForUser = getHeldPasswordForUser($_POST['username'], $db);
+var_dump($verifyPassword = password_verify($_POST['password'], $heldPasswordForUser));
 
 
-$hashedPassword = hashPassword($_POST['password']);
 
-echo $hashedPassword;
-//heldPasswordForUser = getHeldPasswordForUser();
+
+
 //
 ////check the two passwords match
 ////set logged in to true..

@@ -108,7 +108,10 @@ function processAboutMeDeleteForm(PDO $db) : bool {
 }
 
 
-function hashPassword($inputtedPassword) {
-
-    return '';
+function getHeldPasswordForUser($submittedUsername, $db) {
+    $query = $db->prepare("SELECT `password` FROM `security_data` WHERE `username` = :username;");
+    $query->bindParam(':username', $submittedUsername);
+    $query->execute();
+    $output = $query->fetchAll();
+    return $output[0]['password'];
 }
