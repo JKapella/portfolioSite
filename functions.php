@@ -106,3 +106,20 @@ function processAboutMeDeleteForm(PDO $db) : bool {
     $query = $db->prepare("UPDATE `about_me_data` SET `is_deleted` = '1' WHERE `is_deleted` != 1;");
     return $query->execute();
 }
+
+
+/**
+ * This function retrieves associated hashed password for the username provided, if the username retrieves no results, and empty string (null) is returned
+ *
+ * @param string $submittedUsername An alphanumeric string submitted as a username to be checked against entries in the database
+ * @param PDO $db PDO This must be a valid PDO object connecting to a database with an 'security_data' table
+ *
+ * @return string Returns the hashed password associated with the username, or a null string if there is no matching entry
+ */
+function getHeldPasswordForUser(string $submittedUsername, PDO $db) : string {
+    $query = $db->prepare("SELECT `password` FROM `security_data` WHERE `username` = :username;");
+    $query->bindParam(':username', $submittedUsername);
+    $query->execute();
+    $output = $query->fetchAll();
+    return $output[0]['password'];
+}

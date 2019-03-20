@@ -29,7 +29,7 @@ $db = getDbConnection();
     <div class='login-area'>
         <form action='loginHandler.php' method='post'>
             <p><input class='login-input' type='text' name='username' placeholder='Enter your username...'></p>
-            <p><input class='login-input' type='text' name='password' placeholder='Enter your password...'></p>
+            <p><input class='login-input' type='password' name='password' placeholder='Enter your password...'></p>
             <p><input class='submit-button' type='submit'></p>
         </form>
     </div>
