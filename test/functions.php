@@ -45,7 +45,7 @@ class StackTest extends Testcase
         checkIfEditingPost($input);
     }
 
-    public function  testFormatLastUpdatedInfoSuccess()
+    public function testFormatLastUpdatedInfoSuccess()
     {
         $expected = 'Last updated - 2019-02-28 07:06:16';
         $input = ['post_time'=>'2019-02-28 07:06:16'];
@@ -53,7 +53,7 @@ class StackTest extends Testcase
         $this->assertEquals($expected, $case);
     }
 
-    public function  testFormatLastUpdatedInfoFail()
+    public function testFormatLastUpdatedInfoFail()
     {
         $expected = 'Please write a new post!';
         $input = ['cheese'=>'cheesy'];
@@ -61,11 +61,33 @@ class StackTest extends Testcase
         $this->assertEquals($expected, $case);
     }
 
-    public function  testFormatLastUpdatedInfoMalformed()
+    public function testFormatLastUpdatedInfoMalformed()
     {
         $input = '42';
         $this->expectException(TypeError::class);
         formatLastUpdatedInfo($input);
     }
 
+    public function testProcessReturnedPasswordsArraySuccess()
+    {
+        $expected = 'PASSWORD£1345';
+        $input = [['password'=>'PASSWORD£1345']];
+        $case = processReturnedPasswordsArray($input);
+        $this->assertEquals($expected, $case);
+    }
+
+    public function testProcessReturnedPasswordsArrayFailure()
+    {
+        $expected = '';
+        $input = [[1, 2, 3]];
+        $case = processReturnedPasswordsArray($input);
+        $this->assertEquals($expected, $case);
+    }
+
+    public function testProcessReturnedPasswordsArrayMalformed()
+    {
+        $input = 123;
+        $this->expectException(TypeError::class);
+        checkIfEditingPost($input);
+    }
 }

@@ -127,11 +127,11 @@ function getHeldPasswordForUser(string $submittedUsername, PDO $db) : array {
 /**
  * This function takes in an array returned from the database, if there is a 'password' key in the array, it will return the value as a string
  *
- * @param $array ideally returned from the 'getheldpasswordforuser' function an array of key/value pair arrays
+ * @param $array array ideally returned from the 'getheldpasswordforuser' function an array of key/value pair arrays
  *
  * @return string either the hashed password found in the array, or a blank string there is no password key in the array
  */
-function processReturnedPasswordsArray($array) {
+function processReturnedPasswordsArray(array $array) : string {
     if (isset($array[0]['password'])) {
         return $array[0]['password'];
     } else {
