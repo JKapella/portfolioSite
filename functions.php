@@ -106,3 +106,9 @@ function processAboutMeDeleteForm(PDO $db) : bool {
     $query = $db->prepare("UPDATE `about_me_data` SET `is_deleted` = '1' WHERE `is_deleted` != 1;");
     return $query->execute();
 }
+
+
+function hashPassword($inputtedPassword) {
+
+    return '';
+}
