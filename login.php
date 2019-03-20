@@ -5,8 +5,7 @@ include 'dbConnect.php';
 
 session_start();
 
-
-if ($_SESSION['loggedIn'] == true) {
+if (isset($_SESSION['loggedIn'])) {
     header('location: admin.php');
 }
 
