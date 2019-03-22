@@ -3,6 +3,8 @@
 include 'functions.php';
 include 'dbConnect.php';
 
+session_start();
+
 $db = getDbConnection();
 $aboutMeText = returnAboutMeTextFromDb($db);
 
@@ -19,7 +21,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
 </head>
 <body>
     <div class='lock-link'>
-        <a href='admin.php'><img src='img/lockicon.png' alt='an icon of a padlock'></a>
+        <a href='login.php'><img src='img/lockicon.png' alt='an icon of a padlock'></a>
     </div>
     <header>
         <div class='container'>

@@ -3,12 +3,21 @@
 include 'functions.php';
 include 'dbConnect.php';
 
-$db = getDbConnection();
+session_start();
 
+if (!isset($_SESSION['loggedIn'])) {
+    header('location: index.php');
+}
+
+$db = getDbConnection();
 $retrievedAboutMeInfoFromDb = retrieveAboutMeInfoFromDb($db);
 $editingPost = checkIfEditingPost($retrievedAboutMeInfoFromDb);
 $aboutMeLastUpdate = formatLastUpdatedInfo($retrievedAboutMeInfoFromDb);
-$aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb['content'];
+if (isset($retrievedAboutMeInfoFromDb['content'])) {
+    $aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb['content'];
+} else {
+    $aboutMeTextareaCopy = '';
+}
 
 ?>
 
@@ -36,6 +45,7 @@ $aboutMeTextareaCopy = $retrievedAboutMeInfoFromDb['content'];
         <footer>
                 <ul>
                     <li><a href='index.php'>Home</a></li>
+                    <li><a href='logout.php'>Log out</a></li>
                 </ul>
         </footer>
     </div>

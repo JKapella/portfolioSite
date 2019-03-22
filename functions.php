@@ -106,3 +106,35 @@ function processAboutMeDeleteForm(PDO $db) : bool {
     $query = $db->prepare("UPDATE `about_me_data` SET `is_deleted` = '1' WHERE `is_deleted` != 1;");
     return $query->execute();
 }
+
+
+/**
+ * This function retrieves associated hashed password for the username provided, if the username retrieves no results, and empty string (null) is returned
+ *
+ * @param string $submittedUsername An alphanumeric string submitted as a username to be checked against entries in the database
+ * @param PDO $db PDO This must be a valid PDO object connecting to a database with an 'security_data' table
+ *
+ * @return array Returns an array containing the hashed password associated with the username, or a null string if there is no matching entry
+ */
+function getHeldPasswordForUser(string $submittedUsername, PDO $db) : array {
+    $query = $db->prepare("SELECT `password` FROM `security_data` WHERE `username` = :username;");
+    $query->bindParam(':username', $submittedUsername);
+    $query->execute();
+    return $query->fetchAll();
+}
+
+
+/**
+ * This function takes in an array returned from the database, if there is a 'password' key in the array, it will return the value as a string
+ *
+ * @param $array array ideally returned from the 'getheldpasswordforuser' function an array of key/value pair arrays
+ *
+ * @return string either the hashed password found in the array, or a blank string there is no password key in the array
+ */
+function processReturnedPasswordsArray(array $array) : string {
+    if (isset($array[0]['password'])) {
+        return $array[0]['password'];
+    } else {
+        return '';
+    }
+};
