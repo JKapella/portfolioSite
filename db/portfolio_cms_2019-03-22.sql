@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.43)
 # Database: portfolio_cms
-# Generation Time: 2019-03-20 11:37:33 +0000
+# Generation Time: 2019-03-22 11:09:03 +0000
 # ************************************************************
 
 
@@ -38,27 +38,7 @@ LOCK TABLES `about_me_data` WRITE;
 
 INSERT INTO `about_me_data` (`id`, `content`, `post_time`, `is_deleted`)
 VALUES
-	(1,'This will be where the test content for the about me page goes. It\'s gonna be really great, I hope you enjoy it.','2019-02-28 07:06:16',1),
-	(2,'I?m a Full Stack Developer-in-training with The Mayden Academy who?s enthusiastic about both front-end design and back-end systems. I?m also a Certified Scrum Master with training in Agile methodologies. I?m fascinated by games and games design, and have been jamming and creating in my spare time for several years. Away from keyboards and screens I can also be found making loud noises with electric guitars, and stroking all the good dogs.','2019-02-28 08:07:26',1),
-	(3,'I?m a Full Stack Developer-in-training with The Mayden Academy who?s enthusiastic about both front-end design and back-end systems. I?m also a Certified Scrum Master with training in Agile methodologies. I?m fascinated by games and games design, and have been jamming and creating in my spare time for several years. Away from keyboards and screens I can also be found making loud noises with electric guitars, and stroking all the good dogs.','2019-02-28 09:21:21',1),
-	(5,'testing the query','2019-02-28 09:21:31',1),
-	(6,'text','2019-02-28 09:23:07',1),
-	(7,'This is a lovely new post, doeth it work?','2019-02-28 09:47:36',1),
-	(8,'New post who dis?','2019-02-28 09:48:58',1),
-	(9,'I am james, and I am the best, the bestest ever, no one ith better, yeah?','2019-02-28 09:52:26',1),
-	(11,'Does this still work?','2019-02-28 09:58:18',1),
-	(12,'Hello Here is a nice new about me page!','2019-02-28 12:33:10',1),
-	(13,'Chicken and chips','2019-02-28 13:33:19',1),
-	(14,'did this work x2','2019-02-28 13:44:51',1),
-	(15,'did this work?','2019-02-28 13:44:52',1),
-	(16,'If this works, i\'m gonna be pretty frigging happy','2019-02-28 15:47:45',1),
-	(18,'Uh, whut?','2019-02-28 15:47:45',1),
-	(19,'All still good?','2019-02-28 15:47:45',1),
-	(20,'I am editing my lovely post post','2019-02-28 15:49:20',1),
-	(21,'Editing my post','2019-02-28 16:16:07',1),
-	(22,'About me, I am a super cool dude, yeah?','2019-02-28 18:00:39',1),
-	(23,'I am james, and I will do a code for you VERY NICE 100%','2019-02-28 18:05:42',1),
-	(24,'I DO GOOD WEBSITE FOR YOU VERY NICE 100%','2019-02-28 18:05:54',0);
+	(28,'I\'m a Full Stack Developer-in-training with The Mayden Academy who\'s enthusiastic about both front-end design and back-end systems. I\'m also a Certified Scrum Master with training in Agile methodologies. I\'m fascinated by games and games design, and have been jamming and creating in my spare time for several years. Away from keyboards and screens I can also be found making loud noises with electric guitars, and stroking all the good dogs.','2019-03-01 14:52:42',0);
 
 /*!40000 ALTER TABLE `about_me_data` ENABLE KEYS */;
 UNLOCK TABLES;
