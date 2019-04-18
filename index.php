@@ -74,7 +74,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
             <a href='https://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/' target='_blank'>
                 <article>
                     <h3>APTITUDE TEST</h3>
-                    <img src='img/aptitudeIcon.png' alt='More coming soon, placeholder image'>
+                    <img src='img/aptitudeIcon.png' alt='A screenshot of the aptitude test'>
                     <p>Working as teams on an existing codebase this project involved making bugfixes and adding new features.</p>
                     <p>To log in and see the aptitude test, use the test account - jktest@test.test</p>
                 </article>
