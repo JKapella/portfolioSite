@@ -64,18 +64,26 @@ $aboutMeText = returnAboutMeTextFromDb($db);
             <h2>PORTFOLIO</h2>
             <h3>Scroll down</h3>
             <img class='scrollingMouseImage pulsingImage' src='img/mousescrollitem.png' alt='Scroll-down icon'>
-            <a href='http://dev.maydenacademy.co.uk/students/2019/feb/james/w1_pilotShopRebuild/' target='_blank'>
-                <article>
-                    <h3>PILOT SHOP</h3>
-                    <img src='img/pilotShopScreenshot.jpg' alt='A screenshot of my pilot shop rebuild'>
-                    <p>As an exercise in responsive web design we recreated the Pilot Shop digital storefront with HTML and CSS.</p>
-                </article>
-            </a>
             <a href='https://dev.maydenacademy.co.uk/projects/2019Feb/2019-paint-app/' target='_blank'>
                 <article>
                     <h3>PAINTMASTER 3000</h3>
                     <img src='img/paintmasterScreenshot.jpg' alt='A screenshot of our paint game project'>
                     <p>Working in a team using scrum we created a paint game using Javascript.</p>
+                </article>
+            </a>
+            <a href='https://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/' target='_blank'>
+                <article>
+                    <h3>APTITUDE TEST</h3>
+                    <img src='img/aptitudeIcon.png' alt='A screenshot of the aptitude test'>
+                    <p>Working as teams on an existing codebase this project involved making bugfixes and adding new features.</p>
+                    <p>To log in and see the aptitude test, use the test account - jktest@test.test</p>
+                </article>
+            </a>
+            <a href='http://dev.maydenacademy.co.uk/students/2019/feb/james/w1_pilotShopRebuild/' target='_blank'>
+                <article>
+                    <h3>PILOT SHOP</h3>
+                    <img src='img/pilotShopScreenshot.jpg' alt='A screenshot of my pilot shop rebuild'>
+                    <p>As an exercise in responsive web design we recreated the Pilot Shop digital storefront with HTML and CSS.</p>
                 </article>
             </a>
             <a href='#' target='_blank'>
