@@ -61,9 +61,13 @@ $aboutMeText = returnAboutMeTextFromDb($db);
             <h1>PORTFOLIO CMS</h1>
             <div class='copy-area'>
                 <p>This website is (partially) powered by a CMS which we created as a solo project, utilising the LAMP stack.</p>
-
+                <div>
+                    <img src='img/adminScreen.png' alt='A screenshot of the admin screen'>
+                </div>
                 <p>The requirements of the project were to add CRUD functionality to part of our portfolio, with an 'admin' page, protected by a login screen.</p>
-
+                <div>
+                    <img src='img/loginScreen.png' alt='A screenshot of the Login screen'>
+                </div>
                 <p>Both the admin-edit and login features are both in place on this version of the site (you can view the live login page here - the edit page is password protected), but you can view the code on Github.</p>
             </div>
         </div>
