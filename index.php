@@ -86,11 +86,11 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p>As an exercise in responsive web design we recreated the Pilot Shop digital storefront with HTML and CSS.</p>
                 </article>
             </a>
-            <a href='#' target='_blank'>
+            <a href='cmsProject.php' target='_blank'>
                 <article>
-                    <h3>PLACEHOLDER PROJECT</h3>
-                    <img src='img/portfolioPlaceholder4.jpg' alt='More coming soon, placeholder image'>
-                    <p>This is a placeholder (lorem ipsum, etc). Expect to see more exciting projects coming soon to this page.</p>
+                    <h3>PORTFOLIO CMS</h3>
+                    <img src='img/loginPagePreview.png' alt='Screenshot of the login screen'>
+                    <p>Using PHP, we added a CMS layer to our portfolio, updating database entries from our own admin screen.</p>
                 </article>
             </a>
             <a href='#' target='_blank'>
