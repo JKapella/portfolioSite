@@ -68,7 +68,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                 <div>
                     <img src='img/loginScreen.png' alt='A screenshot of the Login screen'>
                 </div>
-                <p>Both the admin-edit and login features are both in place on this version of the site (you can view the live login page here - the edit page is password protected), but you can view the code on Github.</p>
+                <p>Both the admin-edit and login features are both in place on this version of the site (you can view the live login page <a href='http://dev.maydenacademy.co.uk/students/2019/feb/james/portfolioSite/login.php' target='#'>here</a>) the edit page is password protected, but you can view the code on Github.</p>
             </div>
         </div>
     </main>

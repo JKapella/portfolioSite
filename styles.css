@@ -84,10 +84,25 @@ section {
 }
 
 .copy-area {
+    margin-top: 40px;
     border: 2px solid #FFFFFF;
     padding: 0 10px;
     position: relative;
-    margin-bottom: 40px;
+}
+
+.copy-area > div {
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid #FFFFFF;
+    background-color: #000000;
+}
+
+.copy-area > div > img {
+    width: 100%;
+}
+
+.copy-area > p > a {
+    text-decoration: underline;
 }
 
 footer {
