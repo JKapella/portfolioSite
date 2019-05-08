@@ -58,7 +58,14 @@ $aboutMeText = returnAboutMeTextFromDb($db);
     </header>
     <main>
         <div class='container'>
-           
+            <h1>PORTFOLIO CMS</h1>
+            <div class='copy-area'>
+                <p>This website is (partially) powered by a CMS which we created as a solo project, utilising the LAMP stack.</p>
+
+                <p>The requirements of the project were to add CRUD functionality to part of our portfolio, with an 'admin' page, protected by a login screen.</p>
+
+                <p>Both the admin-edit and login features are both in place on this version of the site (you can view the live login page here - the edit page is password protected), but you can view the code on Github.</p>
+            </div>
         </div>
     </main>
 </body>
