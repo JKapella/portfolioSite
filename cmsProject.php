@@ -77,6 +77,11 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     </li>
                 </ul>
             </div>
+            <footer>
+                <ul>
+                    <li><a href='index.php'>Home</a></li>
+                </ul>
+            </footer>
         </div>
     </main>
 </body>

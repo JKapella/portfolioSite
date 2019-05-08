@@ -84,7 +84,7 @@ section {
 }
 
 .copy-area {
-    margin-top: 40px;
+    margin: 40px auto;
     border: 2px solid #FFFFFF;
     padding: 0 10px;
     position: relative;
