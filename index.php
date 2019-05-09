@@ -93,11 +93,11 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p>Using PHP, we added a CMS layer to our portfolio, updating database entries from our own admin screen.</p>
                 </article>
             </a>
-            <a href='#' target='_blank'>
+            <a href='../SystemBuilderApp/' target='#'>
                 <article>
-                    <h3>PLACEHOLDER PROJECT</h3>
-                    <img src='img/portfolioPlaceholder2.jpg' alt='More coming soon, placeholder image'>
-                    <p>This is a placeholder (lorem ipsum, etc). Expect to see more exciting projects coming soon to this page.</p>
+                    <h3>SYSTEM BUILDER APP</h3>
+                    <img src='img/systemBuilderScreenshot.png' alt='A screenshot of my system builder app'>
+                    <p>Taking inspiration from an exercise where we made a HTML/CSS animated solar system, I extended a 'Procedural Star System Builder' hobby-project to include a visualisation of created systems.</p>
                 </article>
             </a>
             <a href='#' target='_blank'>
