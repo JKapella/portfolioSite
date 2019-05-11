@@ -25,6 +25,7 @@ if (isset($retrievedAboutMeInfoFromDb['content'])) {
 <html lang='en'>
 <head>
     <title>Admin Page</title>
+    <link rel='shortcut icon' type=image/x-icon' href='favicon.ico'>
     <link href="https://fonts.googleapis.com/css?family=Oswald:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
     <link rel='stylesheet' href='normalize.css' type='text/css'>
