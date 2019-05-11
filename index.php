@@ -72,12 +72,11 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p class='tag-holder'><span>#JS</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
-            <a href='https://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/' target='_blank'>
+            <a href='apititudeTestProject.php'>
                 <article>
                     <h3>APTITUDE TEST</h3>
                     <img src='img/aptitudeIcon.png' alt='A screenshot of the aptitude test'>
-                    <p>Working as teams on an existing codebase this project involved making bugfixes and adding new features.</p>
-                    <p>To log in and see the aptitude test, use the test account - jktest@test.test</p>
+                    <p>Worked in a team on an existing Javascript codebase this project involved making bug fixes and adding new features to an aptitude test application supported by an API. We used SASS as a preprocessor for our CSS styles, Handlebars to template data from the API, and Gulp to manage these tools.</p>
                     <p class='tag-holder'><span>#JS</span><span>#SASS</span><span>#Handlebars</span><span>#Gulp</span></p>
                 </article>
             </a>
@@ -89,7 +88,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p class='tag-holder'><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
-            <a href='cmsProject.php' target='_blank'>
+            <a href='cmsProject.php'>
                 <article>
                     <h3>PORTFOLIO CMS</h3>
                     <img src='img/loginPagePreview.png' alt='Screenshot of the login screen'>
