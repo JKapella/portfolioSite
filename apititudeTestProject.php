@@ -58,7 +58,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
 </header>
 <main>
     <div class='container'>
-        <h1>PORTFOLIO CMS</h1>
+        <h1>APTITUDE TEST PROJECT</h1>
         <div class='copy-area'>
             <p>For this project we were given an existing codebase to work on and a series of prioritised stories, both bug fixes and features.</p>
             <div>

@@ -72,7 +72,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p class='tag-holder'><span>#JS</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
-            <a href='https://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/' target='_blank'>
+            <a href='apititudeTestProject.php'>
                 <article>
                     <h3>APTITUDE TEST</h3>
                     <img src='img/aptitudeIcon.png' alt='A screenshot of the aptitude test'>
@@ -88,7 +88,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p class='tag-holder'><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
-            <a href='cmsProject.php' target='_blank'>
+            <a href='cmsProject.php'>
                 <article>
                     <h3>PORTFOLIO CMS</h3>
                     <img src='img/loginPagePreview.png' alt='Screenshot of the login screen'>
