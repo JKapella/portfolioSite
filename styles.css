@@ -81,6 +81,7 @@ section {
     padding: 0 10px;
     position: relative;
     margin-bottom: 40px;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .copy-area {
@@ -104,6 +105,17 @@ section {
 
 .copy-area > p > a {
     text-decoration: underline;
+}
+
+.tag-holder {
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+    border: 2px solid #FFFFFF;
 }
 
 footer {
@@ -135,6 +147,7 @@ article {
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 article:hover {

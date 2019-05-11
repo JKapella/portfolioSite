@@ -69,6 +69,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <h3>PAINTMASTER 3000</h3>
                     <img src='img/paintmasterScreenshot.jpg' alt='A screenshot of our paint game project'>
                     <p>Working in a team using scrum we created a paint game using Javascript.</p>
+                    <p class='tag-holder'><span>#JS</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
             <a href='https://dev.maydenacademy.co.uk/projects/2017/aptitude-test/app/' target='_blank'>
@@ -77,6 +78,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <img src='img/aptitudeIcon.png' alt='A screenshot of the aptitude test'>
                     <p>Working as teams on an existing codebase this project involved making bugfixes and adding new features.</p>
                     <p>To log in and see the aptitude test, use the test account - jktest@test.test</p>
+                    <p class='tag-holder'><span>#JS</span><span>#SASS</span><span>#Handlebars</span><span>#Gulp</span></p>
                 </article>
             </a>
             <a href='http://dev.maydenacademy.co.uk/students/2019/feb/james/w1_pilotShopRebuild/' target='_blank'>
@@ -84,6 +86,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <h3>PILOT SHOP</h3>
                     <img src='img/pilotShopScreenshot.jpg' alt='A screenshot of my pilot shop rebuild'>
                     <p>As an exercise in responsive web design we recreated the Pilot Shop digital storefront with HTML and CSS.</p>
+                    <p class='tag-holder'><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
             <a href='cmsProject.php' target='_blank'>
@@ -91,6 +94,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <h3>PORTFOLIO CMS</h3>
                     <img src='img/loginPagePreview.png' alt='Screenshot of the login screen'>
                     <p>Using PHP, we added a CMS layer to our portfolio, updating database entries from our own admin screen.</p>
+                    <p class='tag-holder'><span class='tag'>#HTML</span><span class='tag'>#CSS</span><span class='tag'>#LAMP</span><span class='tag'>#Vagrant</span><span class='tag'>#MySQL</span></p>
                 </article>
             </a>
             <a href='../SystemBuilderApp/' target='#'>
@@ -98,6 +102,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <h3>SYSTEM BUILDER APP</h3>
                     <img src='img/systemBuilderScreenshot.png' alt='A screenshot of my system builder app'>
                     <p>Taking inspiration from an exercise where we made a HTML/CSS animated solar system, I extended a 'Procedural Star System Builder' hobby-project to include a visualisation of created systems.</p>
+                    <p class='tag-holder'><span>#JS (ES6)</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
             <a href='#' target='_blank'>
