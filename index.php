@@ -104,11 +104,12 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p class='tag-holder'><span>#JS (ES6)</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
-            <a href='#' target='_blank'>
+            <a href='http://dev.maydenacademy.co.uk/projects/2019Feb/2019-nmr-TopDog/' target='_blank'>
                 <article>
-                    <h3>PLACEHOLDER PROJECT</h3>
-                    <img src='img/portfolioPlaceholder5.jpg' alt='More coming soon, placeholder image'>
-                    <p>This is a placeholder (lorem ipsum, etc). Expect to see more exciting projects coming soon to this page.</p>
+                    <h3>TOP DOG APP</h3>
+                    <img src='img/topDogScreenshot.png' alt='More coming soon, placeholder image'>
+                    <p>Working in an agile team, we created a tool to scrape an online API of dog pictures into a database, then used SOLID-informed object-oriented programming in PHP to design and build an app for viewing the images and highlighting a 'favourite' dog picture.</p>
+                    <p class='tag-holder'><span>#OOP</span><span class='tag'>#PHP</span><span class='tag'>#API</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
             <a href='#' target='_blank'>
