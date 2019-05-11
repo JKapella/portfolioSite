@@ -112,11 +112,12 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <p class='tag-holder'><span>#OOP</span><span class='tag'>#PHP</span><span class='tag'>#API</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
-            <a href='#' target='_blank'>
+            <a href='http://ashbydog.com' target='_blank'>
                 <article>
-                    <h3>PLACEHOLDER PROJECT</h3>
-                    <img src='img/portfolioPlaceholder3.jpg' alt='More coming soon, placeholder image'>
-                    <p>This is a placeholder (lorem ipsum, etc). Expect to see more exciting projects coming soon to this page.</p>
+                    <h3>ASHBYDOG.COM SITE</h3>
+                    <img src='img/ashbydogScreenshot.png' alt='A screenshot of the ashbydog website'>
+                    <p>Before joining the course at Mayden Academy I created a website for my dog (I promise it's only about 50% as crazy as it sounds) to learn about using Bootstrap, HTML and CSS.</p>
+                    <p class='tag-holder'><span class='tag'>#Bootstrap</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
                 </article>
             </a>
         </div>
