@@ -94,7 +94,7 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <h3>PORTFOLIO CMS</h3>
                     <img src='img/loginPagePreview.png' alt='Screenshot of the login screen'>
                     <p>Using PHP, we added a CMS layer to our portfolio, updating database entries from our own admin screen.</p>
-                    <p class='tag-holder'><span class='tag'>#HTML</span><span class='tag'>#CSS</span><span class='tag'>#LAMP</span><span class='tag'>#Vagrant</span><span class='tag'>#MySQL</span></p>
+                    <p class='tag-holder'><span class='tag'>#LAMP</span><span class='tag'>#Vagrant</span><span class='tag'>#MySQL</span></p>
                 </article>
             </a>
             <a href='../SystemBuilderApp/' target='#'>
@@ -119,6 +119,14 @@ $aboutMeText = returnAboutMeTextFromDb($db);
                     <img src='img/ashbydogScreenshot.png' alt='A screenshot of the ashbydog website'>
                     <p>Before joining the course at Mayden Academy I created a website for my dog (I promise it's only about 50% as crazy as it sounds) to learn about using Bootstrap, HTML and CSS.</p>
                     <p class='tag-holder'><span class='tag'>#Bootstrap</span><span class='tag'>#HTML</span><span class='tag'>#CSS</span></p>
+                </article>
+            </a>
+            <a href='http://dev.maydenacademy.co.uk/students/2019/feb/james/slimTodoApp/public/' target='_blank'>
+                <article>
+                    <h3>SLIM TODO LIST APP</h3>
+                    <img src='img/todoAppScreenshot.png' alt='A screenshot of my to do list app build in slim'>
+                    <p>To practice using an MVC design pattern within the slim framework I built a ‘to-do list’ app.</p>
+                    <p class='tag-holder'><span class='tag'>#Slim</span><span class='tag'>#MVC</span><span class='tag'>#PHP</span><span class='tag'>#MySQL</span></p>
                 </article>
             </a>
         </div>
