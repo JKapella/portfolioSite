@@ -3,11 +3,11 @@
 }
 
 html {
-    background-image: url('img/backgroundImage.jpg');
-    background-color: #000000;
+    background : url('img/backgroundImage.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
 }
 
